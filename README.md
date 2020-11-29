@@ -18,3 +18,7 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+Useful links:
+https://nuxtjs.org/docs/2.x/get-started/conclusion
+https://tailwindcss.nuxtjs.org/tailwind-config
