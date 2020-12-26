@@ -13,7 +13,7 @@ export default {
     menuItems: [
       {name: 'About'}, 
       // {name: 'Stuff'},
-      // {name: 'Blog'}, 
+      {name: 'Blog (Coming Soon)'}, 
     ]
 
   })
