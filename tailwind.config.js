@@ -17,7 +17,10 @@ module.exports = {
     ]
   },
   theme: {
-    extend: {},
+    // fontFamily: {
+    // NOTE: could customize order using font-body class defined below but using mono default for the moment
+    //   body: [],
+    // },
   },
   variants: {},
   plugins: [],
