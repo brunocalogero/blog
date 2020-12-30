@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="md:flex items-center">
+    <div class="md:flex md:flex-wrap place-content-center md:w-8/12">
       <IndexCard v-for="item in menuItems" :key="item.name" :title="item.name"/>
     </div>
   </div>
@@ -11,7 +11,7 @@ export default {
   data: () => ({
     menuItems: [
       {name: 'About'}, 
-      {name: 'Blog'}, 
+      {name: 'Blog'},
     ]
   })
 }

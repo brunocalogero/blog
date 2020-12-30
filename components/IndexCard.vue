@@ -3,7 +3,7 @@
     hover:shadow-lg transition duration-300 ease-out
     m-2
     cursor-pointer
-    flex justify-center">
+    flex w-1/4 justify-center">
     <div>{{ title }}</div>
   </div>
 </template>
