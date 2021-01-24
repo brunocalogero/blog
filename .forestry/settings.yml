@@ -20,8 +20,8 @@ front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
-  install_dependencies_command: yarn
   preview_output_directory: dist
+  install_dependencies_command: yarn
   preview_docker_image: forestryio/node:12
   mount_path: "/srv"
   working_dir: "/srv"
