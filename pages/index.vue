@@ -37,8 +37,8 @@ export default {
   },
   data: () => ({
     menuItems: [
-      {name: 'About'}, 
-      {name: 'Blog'},
+      {name: 'about'}, 
+      {name: 'blog'},
     ],
   })
 }
