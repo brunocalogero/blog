@@ -13,7 +13,8 @@
     "@nuxt/typescript-runtime": "^2.0.0",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
-    "storybook": "^6.0.28"
+    "storybook": "^6.0.28",
+    "vue-showdown": "2"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.6",

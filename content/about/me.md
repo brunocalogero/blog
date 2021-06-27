@@ -1,6 +1,3 @@
----
-
----
 Hello there! I'm a full-stack software engineer
 
 I like to learn about new tech.
@@ -19,6 +16,6 @@ I love music. all of it, from your classical, blues, jazz, rock, heavy metal, dr
 
 This "portfolio" or "personal internet space" stems from an internal need to have a platform to express some thoughts (not that of my wonderful Company <3). I want to be able to have a place where I can write about new things that I've learnt about and the rest of the world that surrounds me. Let's be real, the more important things that are worth me spending some time to write about.
 
-Powered by: Vercel, NuxtJS, TypeScript, TailwindCSS, Forestry...
+Powered by: Vercel, NuxtJS, TailwindCSS, Forestry, probably soonishly, when I need it to feel cooler Typescript?...
 
 As an inspiration from the awesome work by the Risk Ledger Engineering team.
