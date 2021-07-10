@@ -7,6 +7,7 @@
 
 <script>
 export default {
+  transition: 'about',
   async asyncData({ $content }) {
     const page = await $content("about", "me").fetch();
 
@@ -18,4 +19,6 @@ export default {
 </script>
 
 <style lang="postcss">
+  .about-enter-active, .about-leave-active { transition: opacity .35s; }
+  .about-enter, .about-leave-active { opacity: 0; }
 </style>

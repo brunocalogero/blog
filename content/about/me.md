@@ -16,7 +16,7 @@ My hippy self enjoys the science of nutrition and health (physical & mental).
 
 I'm particularly keen about cinematography and take particular joy in video editing.
 
-I enjoy reading about...  health, software, fantasy & everything mythological (thus the large black work tattooed on my back).
+I enjoy reading about... health, software, fantasy & everything mythological (thus the large black work tattooed on my back).
 
 I take edgy interest in open blockchains & related finance/on-chain data.
 
@@ -26,4 +26,4 @@ This "portfolio" or "personal internet space" stems from an internal need to hav
 
 As an inspiration from the awesome work by the Risk Ledger Engineering team...
 
-Powered by: Vercel, NuxtJS, TailwindCSS, Forestry, probably soonishly, when I need it to feel cooler Typescript?...
+_Powered by: Vercel, NuxtJS, TailwindCSS, Forestry, probably soonishly, when I need it to feel cooler Typescript?..._
