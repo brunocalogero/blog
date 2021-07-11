@@ -47,5 +47,12 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+  },
+
+  // Content Configuration (https://content.nuxtjs.org/configuration)
+  content: {
+    markdown: {
+      remarkPlugins: ['remark-emoji']
+    }
   }
 }
