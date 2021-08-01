@@ -14,8 +14,8 @@ sections:
   label: Blog
   create: documents
   match: "**/*"
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: static/img
+public_path: "/static/img"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
