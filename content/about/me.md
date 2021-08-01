@@ -1,8 +1,8 @@
 ---
 title: Me
----
 
-:smile:
+---
+# :smile:
 
 Hello there! I'm a full-stack software engineer :)
 
