@@ -21,4 +21,14 @@ export default {
 <style lang="postcss">
   .about-enter-active, .about-leave-active { transition: opacity .35s; }
   .about-enter, .about-leave-active { opacity: 0; }
+
+  .nuxt-content a {
+    font-weight: bold;
+    font-style: italic;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
 </style>
