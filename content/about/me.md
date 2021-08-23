@@ -24,4 +24,4 @@ This "portfolio" or "personal internet space" stems from an internal need to hav
 
 I was greatly inspired by the awesome work from the Risk Ledger Engineering team...
 
-_Powered by: Vercel, NuxtJS, TailwindCSS, Forestry & - probably soonishly, when I need it to feel cooler - Typescript?..._
+_Powered by: Vercel, NuxtJS, TailwindCSS, Forestry & - probably soonishly, when I need it to feel cooler - Typescript?...._
