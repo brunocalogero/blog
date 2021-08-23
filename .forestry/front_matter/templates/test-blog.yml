@@ -1,4 +1,15 @@
 ---
 label: TEST BLOG
 hide_body: false
-fields: []
+fields:
+- name: date
+  type: datetime
+  label: date
+  description: date thing was modified
+  config:
+    required: false
+    date_format: ''
+    time_format: 
+    display_utc: false
+    export_format: YYYY-MM-DD h:mm A
+  hidden: false
