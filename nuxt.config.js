@@ -51,8 +51,7 @@ export default {
 
   // Content Configuration (https://content.nuxtjs.org/configuration)
   content: {
-    markdown: {
-      remarkPlugins: ['remark-emoji']
-    }
+    // markdown: {
+    // }
   }
 }
