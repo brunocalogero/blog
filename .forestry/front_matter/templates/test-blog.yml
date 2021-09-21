@@ -2,14 +2,16 @@
 label: TEST BLOG
 hide_body: false
 fields:
-- name: date
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+- name: created_at
   type: datetime
-  label: date
-  description: date thing was modified
+  label: Created At
+  description: ''
   config:
     required: false
-    date_format: ''
+    date_format: 
     time_format: 
     display_utc: false
-    export_format: YYYY-MM-DD h:mm A
-  hidden: false
