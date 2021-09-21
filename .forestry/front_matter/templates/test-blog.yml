@@ -15,3 +15,12 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
+- name: created_by
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Created By
