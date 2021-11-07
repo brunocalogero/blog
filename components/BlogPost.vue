@@ -5,10 +5,12 @@
     hover:shadow-lg transition duration-300 ease-out
     m-2
     cursor-pointer
-    flex flex-col justify-center"
+    flex flex-col justify-center items-center
+    text-center
+    "
   >
     <div>{{ title }}</div>
-    <div>{{ createdAt | formatDate }}</div>
+    <div class="mt-2">{{ createdAt | formatDate }}</div>
   </NuxtLink>
 </template>
 <script>
