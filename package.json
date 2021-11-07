@@ -13,6 +13,7 @@
     "@nuxt/content": "^1.14.0",
     "@nuxt/typescript-runtime": "^2.0.0",
     "core-js": "^3.6.5",
+    "highlight.js": "^11.2.0",
     "nuxt": "^2.14.6"
   },
   "devDependencies": {
