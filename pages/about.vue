@@ -1,13 +1,15 @@
 <template>
-  <!-- TODO: use layout? -->
-  <div class="container mx-auto px-10 py-32">
+  <div class="container mx-auto px-10 py-10">
     <nuxt-content class="text-center text-lg leading-10" :document="page" />
   </div>
 </template>
 
 <script>
 export default {
+  name: 'about',
+  layout: 'about',
   transition: 'about',
+  
   async asyncData({ $content }) {
     const page = await $content("about", "me").fetch();
 
