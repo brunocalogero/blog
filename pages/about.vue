@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-10 py-10">
+  <div class="container mx-auto px-10">
     <nuxt-content class="text-center text-lg leading-10" :document="page" />
   </div>
 </template>
