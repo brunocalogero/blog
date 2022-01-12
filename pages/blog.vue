@@ -11,24 +11,6 @@
         :createdBy="page.created_by"
         :tags="page.tags"
       />
-      <BlogPost
-        :title="page.title"
-        :createdAt="page.created_at"
-        :createdBy="page.created_by"
-        :tags="page.tags"
-      />
-      <BlogPost
-        :title="page.title"
-        :createdAt="page.created_at"
-        :createdBy="page.created_by"
-        :tags="page.tags"
-      />
-      <BlogPost
-        :title="page.title"
-        :createdAt="page.created_at"
-        :createdBy="page.created_by"
-        :tags="page.tags"
-      />
     </div>
   </div>
 </template>
