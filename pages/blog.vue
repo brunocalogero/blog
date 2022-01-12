@@ -1,5 +1,6 @@
 <template>  
-  <div class="container">
+  <div class="">
+    <!-- TODO: figure out better margin spacing & single blogpost centering.. -->
     <div 
       class="grid justify-items-center md:grid-cols-3 gap-4 place-items-center grid-cols-1"
       v-for="page in pages" :key="page.title"  

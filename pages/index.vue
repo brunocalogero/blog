@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="wrapper">
     <img class="avatar" src="../static/img/pp.jpeg">
     <div class="flex flex-row space-x-10 items-center mb-10">
       <a href="https://github.com/brunocalogero" target="_blank">
@@ -45,7 +45,7 @@ export default {
 </script>
 
 <style lang="postcss">
-.container {
+.wrapper {
   @apply min-h-screen flex flex-col justify-center items-center mx-auto;
 }
 
