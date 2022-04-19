@@ -1,8 +1,9 @@
 <template>  
-  <div class="">
+  <div class="m-10">
     <!-- TODO: figure out better margin spacing & single blogpost centering.. -->
+    <!-- TODO: reduce gap, (btw cant use flex to limit to three articles per row) -->
     <div 
-      class="grid justify-items-center md:grid-cols-3 gap-4 place-items-center grid-cols-1"
+      class="grid md:grid-cols-3 gap-3 place-items-center grid-cols-1"
       v-for="page in pages" :key="page.title"  
     >
       <BlogPost

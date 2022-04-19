@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto px-10">
-    <nuxt-content class="text-center text-lg leading-10" :document="page" />
+    <nuxt-content :document="page" />
   </div>
 </template>
 
@@ -12,11 +12,10 @@ export default {
   
   async asyncData({ $content }) {
     const page = await $content("about", "me").fetch();
-
     return {
       page
     };
-  },
+  }, 
 };
 </script>
 

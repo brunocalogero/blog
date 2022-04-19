@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col p-10 items-center">
+  <div class="m-10">
     <!-- TODO: try to animate arrow -->
     <NuxtLink class="border-2 hover:border-black rounded-xl px-3 py-3 
       hover:shadow-lg transition duration-300 ease-out
