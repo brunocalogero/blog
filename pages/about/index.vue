@@ -1,6 +1,8 @@
 <template>
-  <div class="container mx-auto px-10 leading-8">
-    <nuxt-content :document="page" />
+  <div class="mx-auto px-10">
+    <article class="mx-auto prose prose-sm sm:prose lg:prose-lg box-content md:px-8">
+       <nuxt-content :document="page" />
+    </article>  
   </div>
 </template>
 

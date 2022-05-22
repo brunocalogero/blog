@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-10 py-32">
+  <div class="mx-auto px-10">
     <article class="mx-auto prose prose-sm sm:prose lg:prose-lg box-content md:px-8">
       <nuxt-content :document="post" />
     </article>
@@ -8,6 +8,8 @@
 
 <script>
 export default {
+  layout: 'slug',
+
   async asyncData({ $content, params }) {
 
       const post = await $content('blog', params.slug).fetch()
