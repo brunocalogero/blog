@@ -1,6 +1,6 @@
 <template>
   <NuxtLink 
-    :to="title" 
+    :to="{ name: 'blog-slug', params: { slug: post.slug } }" 
     class="border-2 hover:border-black rounded-xl px-16 py-12 
     hover:shadow-lg transition duration-300 ease-out
     m-2
@@ -9,29 +9,17 @@
     text-center
     "
   >
-    <div>{{ title }}</div>
-    <div class="mt-2">{{ createdAt | formatDate }}</div>
+    <div>{{ post.title }}</div>
+    <div class="mt-2">{{ post.created_at | formatDate }}</div>
   </NuxtLink>
 </template>
 <script>
 export default {
   props: {
-    title: {
-      type: String,
+    post: {
+      type: Object,
       required: true
-    },
-    createdAt: {
-      type: String,
-      required: true
-    },
-    createdBy: {
-      type: String,
-      required: true,
-    },
-    tags: {
-      type: Array,
-      required: true,
-    },
+    }
   },
 }
 </script>
