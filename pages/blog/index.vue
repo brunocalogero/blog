@@ -7,10 +7,7 @@
       v-for="page in pages" :key="page.title"  
     >
       <BlogPost
-        :title="page.title"
-        :createdAt="page.created_at"
-        :createdBy="page.created_by"
-        :tags="page.tags"
+        :post="page"
       />
     </div>
   </div>
