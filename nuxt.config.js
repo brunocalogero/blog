@@ -1,5 +1,3 @@
-import highlightjs from 'highlight.js'
-
 export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: false,
@@ -22,7 +20,7 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
-    '@/assets/css/styles.css',
+    '@/assets/css/main.css',
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -37,8 +35,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
-    // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
+    // https://tailwindcss.com/docs/guides/nuxtjs
+    '@nuxt/postcss8',
     // https://github.com/nuxt-community/svg-module
     '@nuxtjs/svg',
   ],
@@ -50,23 +48,19 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
   },
 
   // Content Configuration (https://content.nuxtjs.org/configuration)
   content: {
     markdown: {
-      // Adds highlightJS code highlighting.
-      // A manual import of a specific style is needed in wanted vue file &
-      // overwrite of tailwindCSS classes might be required in tailwind.config.js
-      // e.g: import 'highlight.js/styles/atom-one-light.css'
-      //
-      highlighter(rawCode, lang) {
-        const highlightedCode = highlightjs.highlight(lang, rawCode).value
-
-        // We need to create a wrapper, because
-        // the returned code from highlight.js
-        // is only the highlighted code.
-        return `<pre><code class="hljs ${lang}">${highlightedCode}</code></pre>`
+      prism: {
+        theme: 'prism-themes/themes/prism-one-light.css'
       },
     },
   }
