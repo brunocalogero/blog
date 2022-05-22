@@ -13,6 +13,7 @@
     <div class="mt-2">{{ post.created_at | formatDate }}</div>
   </NuxtLink>
 </template>
+
 <script>
 export default {
   props: {
