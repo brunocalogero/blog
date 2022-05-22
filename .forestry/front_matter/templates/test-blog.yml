@@ -24,5 +24,3 @@ fields:
     schema:
       format: markdown
   label: Created By
-pages:
-- content/blog/feature-design-at-a-small-startup.md
