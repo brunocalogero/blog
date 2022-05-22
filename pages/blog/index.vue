@@ -4,9 +4,9 @@
     <!-- TODO: reduce gap, (btw cant use flex to limit to three articles per row) -->
     <div 
       class="grid md:grid-cols-3 gap-3 place-items-center grid-cols-1"
-      v-for="page in pages" :key="page.title"  
     >
       <BlogPost
+        v-for="page in pages" :key="page.title"  
         :post="page"
       />
     </div>
