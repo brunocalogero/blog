@@ -1,5 +1,5 @@
 <template>
-  <div class="font-mono antialiased tracking-tighter">
+  <div>
     <Header class="flex" />
     <Nuxt />
     <Footer />
