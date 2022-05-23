@@ -52,9 +52,9 @@ Before we dive into any commands, we need to understand the **versioning tree** 
 
   _We can also see where the 'remote' or 'origin' (red) branches are vs the 'local' version of those branches are (green) - I'm referring to the names here not the tree. More info on this in the next section._
 
-![](https://riskledger-website-media-uploads.s3-eu-west-1.amazonaws.com/git-article-part-I-1.png)
+![](/img/git-article-part-i-1.png)
 
-![](https://riskledger-website-media-uploads.s3-eu-west-1.amazonaws.com/git-article-part-I-2.png)
+![](/img/git-article-part-i-2.png)
 
 _I suggest reading this and the above image side by side, all PRs available_ [_here_](https://github.com/brunocalogero/git-versioning/pulls?q=is%3Apr+is%3Aclosed) _and referenced with PR #_
 
@@ -76,7 +76,7 @@ _I suggest reading this and the above image side by side, all PRs available_ [_h
   git log --pretty=format:'%h %<(20)%an %s' -10
 ```
 
-![](https://riskledger-website-media-uploads.s3-eu-west-1.amazonaws.com/git-article-part-I-3.png)
+![](/img/git-article-part-i-3.png)
 
 _Taking a look at the commits associated with merging feature branches into **`dev`**: notice how you cannot see the commits of a branch that has been "squash merged" (`04a3ccf` & `b47bcda`), unlike when simply merging (`04e7c85` & `e65b8b0`). In other words, if we had squash merged our first feature branch for example, we wouldn't have seen commit `c0f1e7b`._
 
@@ -92,7 +92,7 @@ _Taking a look at the commits associated with merging feature branches into **`d
 
 - It's very helpful to visualize things here so as to not get confused with the myriad of commands I'm about to throw your way, so I came up with this classic diagram. Please use it as a reference to help you understand what in the world is going on.
 
-![](https://riskledger-website-media-uploads.s3-eu-west-1.amazonaws.com/git-article-part-I-4.png)
+![](/img/git-article-part-i-4.png)
 
 - The most basic commands used include:
 
@@ -124,7 +124,7 @@ _Taking a look at the commits associated with merging feature branches into **`d
 - `git blame` is used to blame your co-workers (I joke). It basically "annotates each line in the given file with information from the revision which last modified the line". This comes out of the box with most editors. It can be useful to figure out the commit hash responsible for changes in a file.
 - With this, we can also add the importance of naming PRs correctly and concisely. As mentioned before, the latter are "squashed and merged" into **`dev`**, meaning all the commits of the branch are squashed into a single commit and merged into **`dev`**. This commit usually ends up being the title of the PR.
 
-![](https://riskledger-website-media-uploads.s3-eu-west-1.amazonaws.com/git-article-part-I-5.png)
+![](/img/git-article-part-i-5.png)
 
 - Commit `04a3ccf7` corresponds to "Changes print statement again".. from PR [#4](https://github.com/brunocalogero/git-versioning/pull/4) which holds the same name as the commit.
 
@@ -136,14 +136,14 @@ _Taking a look at the commits associated with merging feature branches into **`d
 _As of git 2.11 one can select a specific stash to be popped instead of just the latest stash using `git stash apply n` where `n` is the stash number._
 
 - You can list the changes pushed onto the stack using `git stash list` and inspect them using `git stash show`.
-- We add a line of code and demonstrate the `git diff`![](https://riskledger-website-media-uploads.s3-eu-west-1.amazonaws.com/git-article-part-I-6.png)
+- We add a line of code and demonstrate the `git diff`![](/img/git-article-part-i-6.png)
 - We `git stash` and `git stash list` , we can see a single element in our stash stack. We can resume changes as we please and switch branches if we like.
 
-  ![](https://riskledger-website-media-uploads.s3-eu-west-1.amazonaws.com/git-article-part-I-7.png)
+  ![](/img/git-article-part-i-7.png)
 
 - Finally we want our stashed changes back so we `git stash pop`
 
-  ![](https://riskledger-website-media-uploads.s3-eu-west-1.amazonaws.com/git-article-part-I-8.png)
+  ![](/img/git-article-part-i-8.png)
 
 ### git rebase
 

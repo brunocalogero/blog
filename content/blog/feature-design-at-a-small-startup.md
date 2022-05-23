@@ -27,7 +27,7 @@ In this article, I’ll try to give you a basic gist into how our small startup 
 
 To briefly contextualise how we get to feature proposals, it's good to know where these ideas originate from. This can get involved so we will only touch the basics here.
 
-![](/static/img/fdasss-1.png)
+![](/img/fdasss-1.png)
 
 A prioritised opportunities table is gradually formed on the basis of general strategy to wider feedback "inputs" from our various teams:
 
@@ -41,19 +41,19 @@ We call them "opportunities" and not "problems" at this stage, since we have a c
 
 To make sure we know what to add to our final roadmap, we make sure to score each opportunity (cost impact analysis), resulting in an ordered, prioritised list :)
 
-![](/static/img/fdasss-2.png)
+![](/img/fdasss-2.png)
 
 Finally these opportunities are gradually added to our "roadmap", one card per opportunity.
 
 This roadmap is continually updated and is **open to everyone**, creating frictionless awareness of the product teams current and future work.
 
-![](/static/img/fdasss-3.png)
+![](/img/fdasss-3.png)
 
 Each card leads us to a "proposal" which itself is composed of a few phases as we will see next.
 
 ## From roadmap to feature proposal
 
-![](/static/img/fdasss-4.png)
+![](/img/fdasss-4.png)
 
 The discovery phase, also know among us as the "spaghetti phase" is where we gather all the essential information we have around an opportunity.
 
@@ -94,7 +94,7 @@ This is an in-depth description of the behaviours that will be introduced by the
 
 The behaviours are described in terms of their logic and visual changes that might be introduced
 
-![](/static/img/fdasss-5.png)
+![](/img/fdasss-5.png)
 
 An example behaviour and high fidelity Figma design
 
@@ -154,7 +154,7 @@ Indeed, once we are happy with the technical design and our milestones, we ticke
 
 ## Conclusion
 
-![](/static/img/fdasss-6.png)
+![](/img/fdasss-6.png)
 
 At Risk Ledger we have been able to find an efficient way to maximise our feature output through a defined opportunities prioritisation framework and an efficient proposal system. Everything remains fully transparent and accessible by any team member along the way.
 
