@@ -4,7 +4,7 @@ title: Me
 
 # Hmmm
 
-Hello there! I'm a full-stack software engineer :smile:
+Hello there! I'm a full-stack software engineer 🚀
 
 Currently, I'm engineering & designing for [Risk Ledger](https://riskledger.com) on all sorts of interesting [things](https://riskledger.com/company).
 
