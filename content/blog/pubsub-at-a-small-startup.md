@@ -56,7 +56,7 @@ created_by: Bruno Calogero
       	pubmw,
       )
 
-  Notice: the eventsPub here is of type `*pubsub.Pub`
+  Notice: the eventsPub here is of type `pubsub.Pub`
 * Having a SNS topic tied with SQS queues allows for _"persistant messaging"_. Essentially, no concurrency is needed between a message published to a SNS topic and whatever would be handling the message (in our case a SQS queue)
 * As we have seen before, each microservice can then have their own SQS queue(s). As it currently stands, if a microservice requires to listen to an event that was emitted to one of our SNS topics (atm we only have two lol - and one is for alarms) we need a queue to be defined by the microservice that is specifically tied to the latter. We have a tendancy of calling these queues "Events" Queues (this is a subscriber queue). They are just like any other queues, however they subscribe to an SNS topic and more specifically "events" or "messages" published to the SNS topic (as per a terraform definition of the queue).
 
