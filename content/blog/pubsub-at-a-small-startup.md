@@ -5,10 +5,10 @@ created_at: 2022-09-23T23:00:00.000+00:00
 created_by: Bruno Calogero
 
 ---
-Our Go pubsub package was created by none other than our CTO @Daniel Saul.
 
-* why did we build our own pubsub package?
-  * @Daniel Saul wasn't happy about the available packages/libraries out there and decided to write his own package for pubsub. We wanted to support subscribing and publishing to individual queues as well as SNS topics & Queues tied to the latter.
+* Why would we build our own pubsub package?
+  * Not all existing pubsub go libraries are ideal to tie to AWS's SQS & SNS serv 
+  * We wanted to support subscribing and publishing to individual queues as well as SNS topics ( to which queues can also be tied too).
   * Essentially our pubsub package is an abstraction on top of the AWS SDK for Go so that we have better flexibility and easier usage in publishing and subscribing messages within our different microservices.
 
 ## Table of Contents
