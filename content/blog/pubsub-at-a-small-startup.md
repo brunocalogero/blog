@@ -22,24 +22,24 @@ created_by: Bruno Calogero
 * A microservice can publish to a single or multiple SQS Queues. It's simply a matter of specifying the SQS Queue URL to the publisher. One also needs to make sure that the SQS queue exists. Hence, it is important to make sure that the relevant queue is being created in our terraform config. This config can generally be found in the terraform file relevant to the microservice which the queue is related to. A microservice can contain a publisher that publishes to a queue that is "defined" or subscribed to in another microservice. Essentially, one is not limited to publishing and subscribing to a queue in the same microservice. The example below clarifies this: we define a publisher in our "monolith" microservice as we would like to publish messages to the "activity queue"; and we define the subscriber in our activity microservice as we want to deal with the messages sent to the "activity queue" in the latter.
 * Defining a new publisher, that publishes directly to a SQS Queue is simply a matter of providing a "driver sender" (in the case below we are using the `sqs` driver from our own pubsub package, no "_fan-out_" is needed as we will see later), a "logger" and the necessary middleware.
 
-      // defining a SQS queue publisher in a microservice (from monolith main.go)
+      // e.g of defining a SQS queue publisher in a microservice
       activityQueue = pubsub.NewPub(
       	sqs.New(awsSession, cfg.ActivityQueue.SQSQueueURL), 
       	logger, 
       	pubmw,
       )
 
-  Notice: the activityQueue here is of type `*pubsub.Pub`
+  Notice: the activityQueue here is of type `pubsub.Pub`
 * Defining a new subscriber, that subscribes directly to a SQS Queue is simply a matter of providing a "driver receiver" (in the case below we are using the `sqs` driver from our own pubsub package) a "logger" and the necessary middleware.
 
-      // defining a SQS queue subscriber in another microservice (from activity main.go)
+      /// e.g of defining a SQS queue subscriber in a microservice
       s.activityQueue = pubsub.NewSub(
       	sqs.New(awsSession, cfg.ActivityQueue.SQSQueueURL),
       	logger,
       	middleware.HandleDefaults(logger),
       )
 
-  Notice that the activityQueue here is of type `*pubsub.Sub` and is part of the activity microservice struct definition. It is part of the latter because this "subscriber" is a task that is to "consume" and "stop" depending on the state of the microservice:
+  Notice that the activityQueue here is of type `pubsub.Sub` and is part of the microservice struct definition. It is part of the latter because this "subscriber" is a task that is to "consume" and "stop" depending on the state of the microservice:
 
       tasks.Add(s.activityQueue.Consume, s.activityQueue.Stop)
 
