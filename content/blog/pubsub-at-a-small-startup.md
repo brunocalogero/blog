@@ -1,4 +1,5 @@
 ---
+title: PubSub at a small startup
 tags: []
 created_at: 2022-09-23T23:00:00Z
 created_by: Bruno Calogero
