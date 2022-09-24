@@ -7,7 +7,7 @@ created_by: Bruno Calogero
 ---
 
 * Why would we build our own pubsub package?
-  * Not all existing pubsub go libraries are ideal to tie to AWS's SQS & SNS serv 
+  * Not all existing pubsub go libraries are ideal to tie to AWS's SQS & SNS. One might want to create their own. 
   * We wanted to support subscribing and publishing to individual queues as well as SNS topics ( to which queues can also be tied too).
   * Essentially our pubsub package is an abstraction on top of the AWS SDK for Go so that we have better flexibility and easier usage in publishing and subscribing messages within our different microservices.
 
