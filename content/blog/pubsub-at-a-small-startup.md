@@ -6,8 +6,8 @@ created_by: Bruno Calogero
 ---
 ## Table of Contents
 
-* [Publishing and Subscribing to a **Simple Queue Service (SQS)** Queue]()
-* [Publishing to a **Simple Notification Service (SNS)** topic & Subscribing to an "Events" Queue]()
+* [Publishing and Subscribing to a **Simple Queue Service (SQS)** Queue](pubslishingsubbingsqs)
+* [Publishing to a **Simple Notification Service (SNS)** topic & Subscribing to an "Events" Queue](pubsubsns)
 * [Overview Graph]()
 
 Our Golang pubsub package was created by none other than our CTO @Daniel Saul.
@@ -16,7 +16,7 @@ Our Golang pubsub package was created by none other than our CTO @Daniel Saul.
   * @Daniel Saul wasn't happy about the available packages/libraries out there and decided to write his own package for pubsub. We wanted to support subscribing and publishing to individual queues as well as SNS topics & Queues tied to the latter.
   * Essentially our pubsub package is an abstraction on top of the AWS SDK for GoLang so that we have better flexibility and easier usage in publishing and subscribing messages within our different microservices.
 
-## Publishing and Subscribing to a **Simple Queue Service (SQS)** Queue
+## [Publishing and Subscribing to a **Simple Queue Service (SQS)** Queue](pubslishingsubbingsqs)
 
 * A microservice can publish to a single or multiple SQS Queues. It's simply a matter of specifying the SQS Queue URL to the publisher. One also needs to make sure that the SQS queue exists. Hence, it is important to make sure that the relevant queue is being created in our terraform config. This config can generally be found in the terraform file relevant to the microservice which the queue is related to. A microservice can contain a publisher that publishes to a queue that is "defined" or subscribed to in another microservice. Essentially, one is not limited to publishing and subscribing to a queue in the same microservice. The example below clarifies this: we define a publisher in our "monolith" microservice as we would like to publish messages to the "activity queue"; and we define the subscriber in our activity microservice as we want to deal with the messages sent to the "activity queue" in the latter.
 * Defining a new publisher, that publishes directly to a SQS Queue is simply a matter of providing a "driver sender" (in the case below we are using the `sqs` driver from our own pubsub package, no "_fan-out_" is needed as we will see later), a "logger" and the necessary middleware.
@@ -42,7 +42,7 @@ Our Golang pubsub package was created by none other than our CTO @Daniel Saul.
 
       tasks.Add(s.activityQueue.Consume, s.activityQueue.Stop)
 
-## Publishing to a **Simple Notification Service (SNS)** topic & Subscribing to an "Events" Queue
+## [Publishing to a **Simple Notification Service (SNS)** topic & Subscribing to an "Events" Queue](pubsubsns)
 
 * In general, publishing to an SNS topic is synonymous with the concept of _"fan-out"_. The idea is that as one publishes a message to a SNS topic, this message is then accessible to "whomever" subscribes to the SNS topic. For example, a message published to a topic can then be distributed to multiple different queues that subscribe to the topic (thus "fanning-out" from SNS to SQS queues).
 
@@ -74,6 +74,6 @@ Our Golang pubsub package was created by none other than our CTO @Daniel Saul.
 
 Here is a simple graph that condenses all the points mentioned above for the visual learners:
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6e83e4b6-c666-46f7-9e68-41ebcc4ddc70/pubsub](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6e83e4b6-c666-46f7-9e68-41ebcc4ddc70/pubsub_RL.001.png)
+![](/static/img/pubsub_rl-001.png)
 
 Notice: the emailer and cronjob queues are FIFO queues (different to that used in our pubsub package). They have been added to the diagram for the sake of completion.
