@@ -1,4 +1,6 @@
-# mystaticapp
+# Bruno's Blog
+
+Hope you enjoy it!
 
 ## Build Setup
 
