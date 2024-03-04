@@ -7,7 +7,7 @@ created_by: Bruno Calogero
 ---
 
 * Why would we build our own pubsub package?
-  * Not all existing pubsub go libraries are ideal to tie to AWS's SQS & SNS. One might want to create their own. 
+  * Not all existing pubsub go libraries are ideal to tie to AWS's SQS & SNS. One might want to create their own.
   * We do this so we have better flexibility in publishing and subscribing messages within our different Go microservices.
   * We want to support subscribing and publishing to individual queues as well as SNS topics (to which queues can also be tied too).
 
@@ -24,8 +24,8 @@ created_by: Bruno Calogero
 
       // e.g of defining a SQS queue publisher in a microservice
       activityQueue = pubsub.NewPub(
-      	sqs.New(awsSession, cfg.ActivityQueue.SQSQueueURL), 
-      	logger, 
+      	sqs.New(awsSession, cfg.ActivityQueue.SQSQueueURL),
+      	logger,
       	pubmw,
       )
 
@@ -51,8 +51,8 @@ created_by: Bruno Calogero
 
       // defining a SNS topic publisher in a microservice (from monolith main.go)
       eventsPub := pubsub.NewPub(
-      	snssqs.NewSender(awsSession, cfg.Events.SNSTopicARN), 
-      	logger, 
+      	snssqs.NewSender(awsSession, cfg.Events.SNSTopicARN),
+      	logger,
       	pubmw,
       )
 
@@ -75,6 +75,6 @@ created_by: Bruno Calogero
 
 Here is a simple graph that condenses all the points mentioned above for the visual learners:
 
-![](/static/img/pubsub_rl-001.png)
+![](/img/pubsub_rl-001.png)
 
 Notice: the emailer and cronjob queues are FIFO queues (different to that used in our pubsub package). They have been added to the diagram for the sake of completion.

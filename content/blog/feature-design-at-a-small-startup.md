@@ -11,8 +11,8 @@ tags:
 - feature design
 - proposals
 - shape up
-
 ---
+
 I still remember when we used to have lovely RFCs to describe what our engineering team would have to implement... Two years later, those days are long gone and our engineering has only but matured..
 
 Today, we have a unique cross disciplinary product team.
