@@ -1,5 +1,5 @@
 ---
-title: Building my engineering ethos
+title: Building my Engineering Ethos
 created_at: 2024-01-14T00:00:00Z
 created_by: Bruno Calogero
 tags:
@@ -7,6 +7,8 @@ tags:
 - mentality
 - productivity
 ---
+
+## Building my Engineering Ethos
 
 "The Mediator Between the Head and the Hands Must Be the Heart".
 
@@ -21,9 +23,9 @@ I always wanted to build a personal framework that I can simply follow to remain
 
 In this type of environment it is extremely important to know how to manage yourself, no one else will do this for you. Especially if this is one of your first jobs. Being autonomous and getting the right things done, at a certain pace, is key here.
 
-## Principles
+### Principles
 
-### **"Do more, say less"**
+#### **"Do more, say less"**
 
 - I often found myself in situations where I'd commit to something, only to quickly realize that other more urgent tasks would inevitably interfere, making it challenging to keep my promises.
 - This is something that - in a small team - can cause the immediate and dreaded build-up of mistrust from management or your more "senior" peers. Rebuilding trust is significantly more challenging than maintaining a consistent level of trust.
@@ -36,7 +38,7 @@ In this type of environment it is extremely important to know how to manage your
 - *Before you go*: From another point of view, saying less is often valuable, you don't always need to over-explain. As The hollistic psychologist mentions, "over-explaining is an anxiety based habit that shows we aren't comfortable making our own decisions". And this applies to many more things in life.
   - Strive to always be concise in communication, avoid suggestions when they are not needed or aren't correctly founded / researched. Avoid jumping to conclusions.
 
-### **"See a need, fill a need"**
+#### **"See a need, fill a need"**
 
 - This one can be hard to apply in practice but when combined with the above it can work like magic.
 - I have to give credit to Mark Sullivan, my early mentor. I believe he was watching the [2005 animated movie *Robots*](https://www.youtube.com/watch?v=nFVlyKRVgwg)(underrated af btw) and it really hit the nail in the head.
@@ -53,7 +55,7 @@ In this type of environment it is extremely important to know how to manage your
 - In summary, filling the need doesn't always need to be accepted, your solution might not always actually solve a business need. But one thing is certain, you will prove your pragmatism, become more proactive and potentially inspire people around you.
 - *Before you go*: "Produce, organise, publish", don't always wait for opportunities to come to you, create your opportunities and remember, if you don't ask you don't get.
 
-### **"This is the last time you’ll be so shit at it"**
+#### **"This is the last time you’ll be so shit at it"**
 
 - When I first accepted that a sedentary life in front of my computer was not something I wanted - or needed, I decided someone should teach me how to lift weights.
 - The thing is, I'm an extremely self-critical person. One thing I used to always say was "ahh I'm so shit at this" every time I'd start a new exercise.
@@ -67,7 +69,7 @@ In this type of environment it is extremely important to know how to manage your
 - The truth is, it's not always easy. Applying the first two points requires a certain level of motivation, and some people need a whole new perspective to activate that consistent push to get through the pain.
 - *Before you go*: Actively seek for help and support when needed and earlier.
 
-### **“Eat the fish, spit the bones”**
+#### **“Eat the fish, spit the bones”**
 
 - The first time I heard this was in one of [Primeagen](https://www.youtube.com/c/theprimeagen)'s youtube videos.
 - This, to me, has been an amazing quote with respect to feedback.
@@ -77,7 +79,7 @@ In this type of environment it is extremely important to know how to manage your
 - Gergely puts it nicely: "push back on vague feedback which neglects specifics [...] However, once you know the specifics, reflect on the message and think about whether you can - or want - to take action.".
 - *Before you go*: Remember, opinions are like assholes, everybody has one and most of them don't smell good. Even more relevant with all the social media bull crap we are fed on a daily basis.
 
-## Conclusion
+### Conclusion
 
 I really hope these little nuggets have helped put things in perspective for you, the reader, they certainly have for me. On a final note:
 

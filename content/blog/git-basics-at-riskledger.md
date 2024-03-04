@@ -7,6 +7,8 @@ tags:
   - Basics
 ---
 
+## Git Basics at Risk Ledger
+
 Using git can be daunting at first. Like my good friend [Chris](https://twitter.com/chrislamyy) once said, "everyone knows the happy path but the minute it gets hairy we're all screwed".
 
 I've decided to take a closer look at what git commands our engineering team uses on a day to day to get out of hairy situations.
@@ -17,11 +19,11 @@ This first part will dive and revisit some of the basic git commands and will se
 
 > I actually messed up multiple times doing this, goes to show, git fixes become an intuitive thing after a while.
 
-## Our git branching & versioning tree
+### Our git branching & versioning tree
 
 Before we dive into any commands, we need to understand the **versioning tree** of our project.
 
-### Our versioning tree consists of
+#### Our versioning tree consists of
 
 - A **`master`** branch containing all our production-ready code. This branch has a protection rule that requires opening a **pull request (PR)** before merging onto it.
 - A **`dev`** branch containing code that is bundled and released periodically to the **`master`** branch. We like to use **`dev`** as our staging environment.
@@ -30,7 +32,7 @@ Before we dive into any commands, we need to understand the **versioning tree** 
 
   We therefore **squash and merge** our feature branches onto **`dev`** when a **PR** is opened and merged. Regardless of how many commits a feature branch has, once it is merged, all the commits are squashed into a single commit, that usually has the title of the PR. We then periodically **merge** code to **`master`** from **`dev`** via releases.
 
-### Visualizing our git tree
+#### Visualizing our git tree
 
 - Visualizing the versioning tree can be extremely powerful, there are several ways to do this but a favorite is the memorable "A DOG" git log command.
 
@@ -80,7 +82,7 @@ _I suggest reading this and the above image side by side, all PRs available_ [_h
 
 _Taking a look at the commits associated with merging feature branches into **`dev`**: notice how you cannot see the commits of a branch that has been "squash merged" (`04a3ccf` & `b47bcda`), unlike when simply merging (`04e7c85` & `e65b8b0`). In other words, if we had squash merged our first feature branch for example, we wouldn't have seen commit `c0f1e7b`._
 
-## Working on branches
+### Working on branches
 
 - Most of the git commands that we use daily revolve around branches. Changes that are staged, committed and pushed onto a branch can be manipulated as one wishes, however it can easily get messy.
 - Some semantics are needed for us to understand the basics of a branch:
@@ -117,9 +119,9 @@ _Taking a look at the commits associated with merging feature branches into **`d
   - `git branch -D <branch-name>`
     - This deletes a local branch. We usually do this when we don't need a local branch anymore.
 
-## Most used basic commands
+### Most used basic commands
 
-### git blame
+#### git blame
 
 - `git blame` is used to blame your co-workers (I joke). It basically "annotates each line in the given file with information from the revision which last modified the line". This comes out of the box with most editors. It can be useful to figure out the commit hash responsible for changes in a file.
 - With this, we can also add the importance of naming PRs correctly and concisely. As mentioned before, the latter are "squashed and merged" into **`dev`**, meaning all the commits of the branch are squashed into a single commit and merged into **`dev`**. This commit usually ends up being the title of the PR.
@@ -128,7 +130,7 @@ _Taking a look at the commits associated with merging feature branches into **`d
 
 - Commit `04a3ccf7` corresponds to "Changes print statement again".. from PR [#4](https://github.com/brunocalogero/git-versioning/pull/4) which holds the same name as the commit.
 
-### git stash
+#### git stash
 
 - `git stash` has to be my all time favorite command and one of the most powerful tools at your disposal.
 - The stash is essentially a [stack](<https://en.wikipedia.org/wiki/Stack_(abstract_data_type)>). You can push in local changes that you don't need at the moment and might want to save for later. You can then get ahold of them again anywhere by simply popping the last stash (LIFO) using `git stash pop` .
@@ -145,7 +147,7 @@ _As of git 2.11 one can select a specific stash to be popped instead of just the
 
   ![](/img/git-article-part-i-8.png)
 
-### git rebase
+#### git rebase
 
 - `git rebase` is probably one of the most common commands used by us.
 - The most common use case is when we create a feature branch off of **`dev`** and in the mean time other feature branches are being merged into **`dev`**. Some of the files that we are currently changing might have been modified by the other feature branches that were merged. This can cause merge conflicts.
@@ -156,7 +158,7 @@ _As of git 2.11 one can select a specific stash to be popped instead of just the
 
 - Fixing merge conflicts might require you to force push, I recommend always being safe and using the `—force-with-lease`
 
-### git reset
+#### git reset
 
 - `git reset` can be your best friend at times. It allows you to undo changes that have been commited (and also potentially pushed).
 - The most common scenario for me is when I accidentally forget to add a change to a commit that i've already sent off. I also use this when I create WIP commits and I want to undo them so as to be able to take the changes from that "WIP" commit and actually create a clean commit history.
@@ -164,12 +166,12 @@ _As of git 2.11 one can select a specific stash to be popped instead of just the
   - The `--hard` flag won't give you the file changes from the commit back into your working directory and will simply reset the commit as is.
   - "`git reset --hard origin/my-branch` can be used when checking out `my-branch` locally and some merge or pull or fetch or something has just gone wrong and I just want my local to be the same as the remote (after making sure of course that remote really does have everything I need and I won't be deleting something locally)" - [Fred](https://twitter.com/multifreding) from Risk Ledger.
 
-### git cherry-pick
+#### git cherry-pick
 
 - Honestly [this](https://www.atlassian.com/git/tutorials/cherry-pick) article does an amazing job at explaining cherry picking so I won't start reinventing the wheel again.
 - This is useful when you need to selectively grab commit(s) from elsewhere and append them to your working HEAD.
 
-## Conclusion
+### Conclusion
 
 Git is a powerful tool when the basics are mastered correctly.
 

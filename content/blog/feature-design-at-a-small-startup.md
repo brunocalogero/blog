@@ -13,6 +13,8 @@ tags:
 - shape up
 ---
 
+## Feature Design at a small Startup
+
 I still remember when we used to have lovely RFCs to describe what our engineering team would have to implement... Two years later, those days are long gone and our engineering has only but matured..
 
 Today, we have a unique cross disciplinary product team.
@@ -23,7 +25,7 @@ Our main goals include providing direct value to our clients but also to our int
 
 In this article, I’ll try to give you a basic gist into how our small startup is currently successfully delivering features at a fast pace (2-3 per week - variable in size & scope).
 
-## A brief introduction to how our roadmap is built
+### A brief introduction to how our roadmap is built
 
 To briefly contextualise how we get to feature proposals, it's good to know where these ideas originate from. This can get involved so we will only touch the basics here.
 
@@ -51,7 +53,7 @@ This roadmap is continually updated and is **open to everyone**, creating fricti
 
 Each card leads us to a "proposal" which itself is composed of a few phases as we will see next.
 
-## From roadmap to feature proposal
+### From roadmap to feature proposal
 
 ![](/img/fdasss-4.png)
 
@@ -68,7 +70,7 @@ It's important to note that not all opportunities make it through this phase, es
 
 If the opportunity makes it through discovery, the next steps are the approach & technical design, known as the "proposal".
 
-## The Proposal document (or Spec)
+### The Proposal document (or Spec)
 
 This is the core of the feature work, where the behaviours are defined, the scope of the work clarified and the technical design elucidated.
 
@@ -78,7 +80,7 @@ As we define the behaviours, some of the latter might not be essential in comple
 
 The two most important parts to this document are the approach & the technical design. Before these sections a brief "need" is used to gauge the appetite of the reader and briefly contextualise the whole proposal.
 
-### Need
+#### Need
 
 The need tries to answer the following question: **_Why_** _should we do this?_
 
@@ -86,7 +88,7 @@ This is an opportunity to briefly give some context to the reader as to what the
 
 One could include a concrete example of the user being exposed to the problem addressed and how solving the problem aligns with the company and product strategy / vision.
 
-### Approach
+#### Approach
 
 An approach tries to answer the following question: **_What_** _should we do?_
 
@@ -112,7 +114,7 @@ It's also important to note that the approach is continually reviewed by other e
 
 Once there is general consensus around the approach we move on to technical design. The people involved for this next steps are usually engineers, so it could be someone different to the person(s) who wrote the approach.
 
-### Technical Design
+#### Technical Design
 
 The technical design tries to answer the following question: **_How_** _should we do it?_
 
@@ -132,7 +134,7 @@ Once technical implementation is finished it also undergoes continual reviewing,
 
 Last but certainly **not least**, we define the milestones for the project.
 
-### Milestones
+#### Milestones
 
 Our projects are **fixed time, variable scope**. So are our milestones..
 
@@ -144,7 +146,7 @@ A project may have 5 milestones for instance, however only 3 might suffice to pr
 
 As final work we also like to define how we will raise **awareness** for the the new feature (usually intercom, emailing and internal messaging) and how we define the **success criteria** for the project (this is usually data based or our users changing their behaviours).
 
-### Development
+#### Development
 
 Usually, the engineers who write the technical design, generally end up developing the feature.
 
@@ -152,7 +154,7 @@ Indeed, once we are happy with the technical design and our milestones, we ticke
 
 > ❗ An Engineer should always refer to the proposal document and not only the ticket contents. We need to work with the wider feature in mind, not silo our mind. Simply referring to the ticket can result in an incomplete feature once development is over, things are easily forgotten. Referring to the proposal is an easy way to keep responsibility of completing the full feature.
 
-## Conclusion
+### Conclusion
 
 ![](/img/fdasss-6.png)
 

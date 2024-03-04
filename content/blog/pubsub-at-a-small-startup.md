@@ -6,18 +6,20 @@ created_by: Bruno Calogero
 
 ---
 
+## PubSub at a small Startup
+
 * Why would we build our own pubsub package?
   * Not all existing pubsub go libraries are ideal to tie to AWS's SQS & SNS. One might want to create their own.
   * We do this so we have better flexibility in publishing and subscribing messages within our different Go microservices.
   * We want to support subscribing and publishing to individual queues as well as SNS topics (to which queues can also be tied too).
 
-## Table of Contents
+### Table of Contents
 
 * Publishing and Subscribing to a **Simple Queue Service (SQS)** Queue
 * Publishing to a **Simple Notification Service (SNS)** topic & Subscribing to an "Events" Queue
 * Overview Graph
 
-## Publishing and Subscribing to a **Simple Queue Service (SQS)** Queue
+### Publishing and Subscribing to a **Simple Queue Service (SQS)** Queue
 
 * A microservice can publish to a single or multiple SQS Queues. It's simply a matter of specifying the SQS Queue URL to the publisher. One also needs to make sure that the SQS queue exists. Hence, it is important to make sure that the relevant queue is being created in our terraform config. This config can generally be found in the terraform file relevant to the microservice which the queue is related to. A microservice can contain a publisher that publishes to a queue that is "defined" or subscribed to in another microservice. Essentially, one is not limited to publishing and subscribing to a queue in the same microservice. The example below clarifies this: we define a publisher in our "monolith" microservice as we would like to publish messages to the "activity queue"; and we define the subscriber in our activity microservice as we want to deal with the messages sent to the "activity queue" in the latter.
 * Defining a new publisher, that publishes directly to a SQS Queue is simply a matter of providing a "driver sender" (in the case below we are using the `sqs` driver from our own pubsub package, no "_fan-out_" is needed as we will see later), a "logger" and the necessary middleware.
@@ -43,7 +45,7 @@ created_by: Bruno Calogero
 
       tasks.Add(s.activityQueue.Consume, s.activityQueue.Stop)
 
-## Publishing to a **Simple Notification Service (SNS)** topic & Subscribing to an "Events" Queue
+### Publishing to a **Simple Notification Service (SNS)** topic & Subscribing to an "Events" Queue
 
 * In general, publishing to an SNS topic is synonymous with the concept of _"fan-out"_. The idea is that as one publishes a message to a SNS topic, this message is then accessible to "whomever" subscribes to the SNS topic. For example, a message published to a topic can then be distributed to multiple different queues that subscribe to the topic (thus "fanning-out" from SNS to SQS queues).
 
@@ -71,7 +73,7 @@ created_by: Bruno Calogero
 
   Notice: this is very similar to what was described above for standard sqs queue subscription.
 
-## Overview Graph
+### Overview Graph
 
 Here is a simple graph that condenses all the points mentioned above for the visual learners:
 
