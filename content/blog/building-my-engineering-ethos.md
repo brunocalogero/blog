@@ -89,6 +89,6 @@ I really hope these little nuggets have helped put things in perspective for you
 
 I have to give props to Gergely Orosz's (The Pragmatic Engineer) Software Engineer Guidebook. This book contains an immense amount of knowledge that is well geared in the space of self-management and what type of engineer to be in order to be successful. I'd highly recommend the reader to take a look. Most notably the notions of "logging your work" and creating a "brag document" to track your progress on a daily and weekly basis.
 
-As George says, regardless of anything, "if you are not seen as someone who gets stuff done, then nothing else will matter".
+As Gergely says, regardless of anything, "if you are not seen as someone who gets stuff done, then nothing else will matter".
 
 "You can shine no matter what you are made of".
