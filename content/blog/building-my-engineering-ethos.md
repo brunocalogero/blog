@@ -18,7 +18,7 @@ This is a years-long worth of reflections into something that is digestible.
 I have to warn that it remains "organic" as I face new situations that inevitably lead to new learnings. It does, however, remain my first attempt at organizing my thoughts.
 The hope is that it might help some of you who are trying to make sense of all these emotions.
 
-After having worked fours a half years at a startup, from its humble beginnings when we were only 5, to series A; I have built various ways to remain productive, motivated and pragmatic as a **product engineer**.
+After having worked four and a half years at a startup, from its humble beginnings when we were only 5, to series A; I have built various ways to remain productive, motivated and pragmatic as a **product engineer**.
 I always wanted to build a personal framework that I can simply follow to remain sharp at a more "psychological" level.
 
 In this type of environment it is extremely important to know how to manage yourself, no one else will do this for you. Especially if this is one of your first jobs. Being autonomous and getting the right things done, at a certain pace, is key here.
