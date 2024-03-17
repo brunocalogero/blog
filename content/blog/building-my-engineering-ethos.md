@@ -83,7 +83,7 @@ In this type of environment it is extremely important to know how to manage your
 
 I really hope these little nuggets have helped put things in perspective for you, the reader, they certainly have for me. On a final note:
 
-- There will always be another to take what is yours, it’s your decision and free will to either accept it or reject it.
+- There will always be another to take what you think is yours, it’s your decision and free will to either accept it or reject it.
 - Some things are just out of your control, but it is your responsibility to control the things that you are in control of.
 - Almost everyone is selfish and thinking about their own growth. Don't let that be your limiting factor.
 
