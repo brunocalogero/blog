@@ -8,18 +8,18 @@ tags:
 - productivity
 ---
 
-## Building my Engineering Ethos
+## Building my engineering ethos
 
-"The Mediator Between the Head and the Hands Must Be the Heart".
+"The mediator between the head and the hands must be the heart".
 
 I start this article with an iconic line from the famous "Metropolis" and an incessant urge to use chatGPT to generate some of this content. Promise, I won't.
 
 This is a years-long worth of reflections into something that is digestible.
-I have to warn that it remains "organic" as I face new situations that inevitably lead to new learnings. It does, however, remain my first attempt at organizing my thoughts.
+It remains "organic" as I face new situations that inevitably lead to new learnings. It does, however, remain my first attempt at organizing my thoughts.
 The hope is that it might help some of you who are trying to make sense of all these emotions.
 
 After having worked four and a half years at a startup, from its humble beginnings when we were only 5, to series A; I have built various ways to remain productive, motivated and pragmatic as a **product engineer**.
-I always wanted to build a personal framework that I can simply follow to remain sharp at a more "psychological" level.
+I always wanted to build a personal framework that I can simply follow to remain sharp at a more "psychological" level. Here I share principles that have helped me achieve this and fight off the dreaded imposter syndrome that plagues software engineers.
 
 In this type of environment it is extremely important to know how to manage yourself, no one else will do this for you. Especially if this is one of your first jobs. Being autonomous and getting the right things done, at a certain pace, is key here.
 
@@ -35,7 +35,7 @@ In this type of environment it is extremely important to know how to manage your
   - At the end of the day delivering something, as little as it may be is better then delivering an empty promise. It shows that you tried. You can always gage the excitement for a first version of a feature and use it as motivation to move in the right direction.
   - You can also decide to scrap it and move on. By doing this the choice is ultimately yours. That's the beauty of it.
   - You will find that doing this will not only make you more pragmatic and proactive but it will boost your morale too.
-- *Before you go*: From another point of view, saying less is often valuable, you don't always need to over-explain. As The hollistic psychologist mentions, "over-explaining is an anxiety based habit that shows we aren't comfortable making our own decisions". And this applies to many more things in life.
+- *Before you go*: From another point of view, saying less is often valuable, you don't always need to over-explain. As The Hollistic Psychologist (Dr. Nicole LePera) mentions, "over-explaining is an anxiety based habit that shows we aren't comfortable making our own decisions". And this applies to many more things in life.
   - Strive to always be concise in communication, avoid suggestions when they are not needed or aren't correctly founded / researched. Avoid jumping to conclusions.
 
 #### **"See a need, fill a need"**
@@ -46,7 +46,6 @@ In this type of environment it is extremely important to know how to manage your
   - I'd also recommend something that preferably makes you grow. Defining what makes you grow is a whole different discussion so I will assume you have a vague idea of what that might be.
 - To illustrate this quote, I'll use none other than myself:
   - With the obvious advent of AI and Large Language Models (LLMs), and my experience building the product, it was obvious that a lot of our core offering could be automated.
-  - Yes I know, I know, this might be giving off "jump on the hype train" vibes but hear me out, this is just an easy example.
   - Indeed, the core flow involves uploading files (95%+ of which are PDFs). These files are used as evidence to questions. It was therefore a no-brainer for me to fill the need by attempting to automate the process of answering the questions.
   - This came in the form of delivering a concrete demo. This demo has to be "palpable" and inspiring. Viewers must see the vision immediately. You have to be telling a story.
 - Taking a look at the more successful people around me, I keep on seeing countless examples like this one.
@@ -85,10 +84,12 @@ I really hope these little nuggets have helped put things in perspective for you
 
 - There will always be another to take what you think is yours, it’s your decision and free will to either accept it or reject it.
 - Some things are just out of your control, but it is your responsibility to control the things that you are in control of.
-- Almost everyone is selfish and thinking about their own growth. Don't let that be your limiting factor.
+- Almost everyone is selfish and thinking about their own growth. Don't wait for or expect others to enable that growth.
 
-I have to give props to Gergely Orosz's (The Pragmatic Engineer) Software Engineer Guidebook. This book contains an immense amount of knowledge that is well geared in the space of self-management and what type of engineer to be in order to be successful. I'd highly recommend the reader to take a look. Most notably the notions of "logging your work" and creating a "brag document" to track your progress on a daily and weekly basis.
+I want to thank some of my wonderful friends and colleagues who have spent time reviewing these words. One great quote that was shared by one of them (Fred) really sums up the spirit here, it's none other than the answer to 'what is your deepest fear?'. If you remember watching Coach Carter you'll remember that part of the answer is "There is nothing enlightened about shrinking so that other people won't feel insecure around you" and as Fred would say "don't stunt yourself, do you 100%". He also said something that I found beautiful, "we should never bring ourselves up by bringing someone else down".
+
+I'd highly recommend the reader to take a look at the Pragmatic Engineer's Software Engineer Guidebook. Most notably the notions of "logging your work" and creating a "brag document" to track your progress on a daily and weekly basis. Unlike this article it delves more into the concrete things that actually make a good engineer.
 
 As Gergely says, regardless of anything, "if you are not seen as someone who gets stuff done, then nothing else will matter".
 
-"You can shine no matter what you are made of".
+One thing is sure though, "you can shine no matter what you are made of".
