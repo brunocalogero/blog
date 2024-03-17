@@ -1,5 +1,5 @@
 ---
-title: Git Basics at Risk Ledger (Part I)
+title: Git basics at Risk Ledger (Part I)
 created_at: 2021-09-16T09:00:00.000+00:00
 created_by: Bruno Calogero
 tags:
@@ -7,7 +7,7 @@ tags:
   - Basics
 ---
 
-## Git Basics at Risk Ledger
+## Git basics at Risk Ledger
 
 Using git can be daunting at first. Like my good friend [Chris](https://twitter.com/chrislamyy) once said, "everyone knows the happy path but the minute it gets hairy we're all screwed".
 
