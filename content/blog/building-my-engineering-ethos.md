@@ -1,5 +1,5 @@
 ---
-title: Building my Engineering Ethos
+title: Building my engineering ethos
 created_at: 2024-01-14T00:00:00Z
 created_by: Bruno Calogero
 tags:
