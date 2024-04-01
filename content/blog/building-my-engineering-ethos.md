@@ -1,5 +1,5 @@
 ---
-title: Building my engineering ethos
+title: Crafting my engineering ethos
 created_at: 2024-01-14T00:00:00Z
 created_by: Bruno Calogero
 tags:
@@ -8,13 +8,13 @@ tags:
 - productivity
 ---
 
-## Building my engineering ethos
+## Crafting my engineering ethos
 
 "The mediator between the head and the hands must be the heart".
 
 I start this article with an iconic line from the famous "Metropolis" and an incessant urge to use chatGPT to generate some of this content. Promise, I won't.
 
-This is a years-long worth of reflections into something that is digestible.
+This article represents several years' worth of reflections distilled into digestible content.
 It remains "organic" as I face new situations that inevitably lead to new learnings. It does, however, remain my first attempt at organizing my thoughts.
 The hope is that it might help some of you who are trying to make sense of all these emotions.
 
