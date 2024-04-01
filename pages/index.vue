@@ -12,7 +12,10 @@
         <LinkedinLogo class="social" />
       </a>
       <a href="https://www.instagram.com/bruquiem/" target="_blank">
-        <InstagramLogo  class="social" />
+        <InstagramLogo class="social" />
+      </a>
+      <a href="https://brunocalogero.substack.com/" target="_blank">
+        <SubstackLogo class="social" />
       </a>
     </div>
     <!-- add intro with small three dot animation -->
@@ -27,6 +30,7 @@ import GithubLogo from "~/static/socials/github.svg?inline";
 import TwitterLogo from "~/static/socials/twitter.svg?inline";
 import LinkedinLogo from "~/static/socials/linkedin.svg?inline";
 import InstagramLogo from "~/static/socials/instagram.svg?inline";
+import SubstackLogo from "~/static/socials/substack.svg?inline";
 
 export default {
   components: {
@@ -34,10 +38,11 @@ export default {
     TwitterLogo,
     LinkedinLogo,
     InstagramLogo,
+    SubstackLogo,
   },
   data: () => ({
     menuItems: [
-      {name: 'about'}, 
+      {name: 'about'},
       {name: 'blog'},
     ],
   })
@@ -50,7 +55,7 @@ export default {
 }
 
 .avatar {
-  @apply object-cover rounded-full h-48 w-48 mb-10 shadow-lg; 
+  @apply object-cover rounded-full h-48 w-48 mb-10 shadow-lg;
 }
 
 .social {
